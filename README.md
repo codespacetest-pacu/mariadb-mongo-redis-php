@@ -15,8 +15,10 @@ Database config information for [database-client](https://database-client.com/#/
 ```/home/vscode/.vscode-remote/data/User/globalStorage/cweijan.vscode-mysql-client2```
 
 To add queries to git:
-```devcontainer.json
-	sudo rm -f /home/vscode/.dbclient && sudo ln -s \"$(pwd)/.dbclient\"  /home/vscode/
+```
+devcontainer.json
+
+sudo rm -f /home/vscode/.dbclient && sudo ln -s \"$(pwd)/.dbclient\"  /home/vscode/
 ```
 
 # Add Mongo
