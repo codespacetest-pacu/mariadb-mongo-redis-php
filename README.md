@@ -51,7 +51,7 @@ To add queries to git:
 
 # Install Redis PHP Libraries
 * [Instructions](https://developer.redis.com/develop/php/)
-* ````sudo pecl install redis```
+*   ```sudo pecl install redis```
 * Add redis.ini to /usr/local/etc/php/conf.d
 *   ```extension=redis.so```
 * [Examples](https://github.com/redis-developer/redis-php-getting-started/)
