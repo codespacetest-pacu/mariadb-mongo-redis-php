@@ -16,8 +16,7 @@ Database config information for [database-client](https://database-client.com/#/
 
 To add queries to git:
 ```devcontainer.json
-	// for database-client.com extension
-	 sudo ln -s /home/vscode/.dbclient/ \"$(pwd)\"" 
+	sudo rm -f /home/vscode/.dbclient && sudo ln -s \"$(pwd)/.dbclient\"  /home/vscode/
 ```
 
 # Add Mongo
