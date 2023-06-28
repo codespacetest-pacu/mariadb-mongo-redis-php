@@ -1,0 +1,9 @@
+{
+    "database-client.telemetry.usesOnlineServices": false   ,
+    "editor.tabSize": 2,
+    "files.autoSave": "afterDelay",
+    "editor.insertSpaces": false,
+    "editor.rulers": [80],
+    "files.eol": "\n",
+
+}
