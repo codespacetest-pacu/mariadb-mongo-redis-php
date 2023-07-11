@@ -61,8 +61,9 @@ sudo rm -f /home/vscode/.dbclient && sudo ln -s \"$(pwd)/.dbclient\"  /home/vsco
 * [Online testing](https://onlinephp.io/)
 * [Password Generation](https://onlinephp.io/password-hash)
 * [Store DB password in file](https://www.php.net/manual/en/pdo.construct.php)
-* Install [stubs](https://github.com/bmewburn/vscode-intelephense/issues/793) for intelephense (redis, mongo)
-  *   See .vscode/settings.json in this repos
+* Configure [Intelephense](https://github.com/bmewburn/intelephense-docs/blob/master/installation.md)
+  * Install [stubs](https://github.com/bmewburn/vscode-intelephense/issues/793) for intelephense (redis, mongo, mongodb)
+    *   See .vscode/settings.json in this repos
 
 # DEBUG PHP
 * Xdebug is running on port 9000, not 9003
