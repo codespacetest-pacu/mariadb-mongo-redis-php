@@ -9,6 +9,7 @@ mariadb -h localhost -P 3306  --protocol=tcp -u root --password=mariadb -D maria
 ```
 apache2ctl start
 ```
+### Note: Start apache AFTER .devcontainer/.devcontainer.json ```postCreateCommand``` stops running. 
 
 
 Database config information for [database-client](https://database-client.com/#/document) stored here:
@@ -42,6 +43,7 @@ MongoDB and Redis now each run in their own container configured in .devcontaine
   *   ```extension=mongodb.so```
 * Install PHP libraries via composer in pdoExamples directory -- user must do by hand
   *   ```composer require mongodb/mongodb```
+  * run after .devcontainer/.devcontainer.json ```postCreateCommand``` stops running. 
 
 # Add Redis
 
