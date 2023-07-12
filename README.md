@@ -1,3 +1,14 @@
+# Mariadb_MongoDB_Redis_WebApp_Example 
+
+## Goal
+
+Demonstrates the combined use of a RDBMS (Mariadb), a document database (MongoDB), a key-value pair database (Redis), and a RESTfulAPI.
+
+## Description
+
+This web app is a book seller website.  Inventory and Purchases (transactions) are stored in the RDBMS.  Book reviews and comments are stored in the document database.  User settings and shopping cart information is stored in the key-value pair database.  Detailed information about individual books is accessed via the RESTfulAPI ([openlibrary.org](https://openlibrary.org/dev/docs/api/books)).
+
+
 # php-mysql-test
 
 [Original Instructions](https://github.com/microsoft/vscode-dev-containers/tree/main/containers/php-mariadb)
@@ -20,41 +31,45 @@ devcontainer.json
 
 sudo rm -f /home/vscode/.dbclient && sudo ln -s \"$(pwd)/.dbclient\"  /home/vscode/
 ```
+# Mongo and Redis
+
+MongoDB and Redis now each run in their own container configured in .devcontainer/docker-compose.yml. Each database starts automatically.
+
 
 # Add Mongo
 
 * Install [MongoDB Extension](https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode)
-* Install [Docker-in-Docker](https://aaronblondeau.com/posts/november_2021/github-codespaces/). Choose ```Modify your active configuration...```
-* Install [Mongo via Docker](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-community-with-docker/)
-* Run Mongo: ```docker run --name mongo -d -p 27017:27017/tcp mongodb/mongodb-community-server:latest```
+* ~~Install [Docker-in-Docker](https://aaronblondeau.com/posts/november_2021/github-codespaces/). Choose ```Modify your active configuration...```~~
+* ~~Install [Mongo via Docker](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-community-with-docker/)~~
+* ~~Run Mongo: ```docker run --name mongo -d -p 27017:27017/tcp mongodb/mongodb-community-server:latest```~~
 * Connect to mongo via: ```mongosh```
-* If you run via the Docker extension, --rm is used which removed the container on exit. 
+* ~~If you run via the Docker extension, --rm is used which removed the container on exit.~~
 
-# Install MongoDB PHP Libraries
+# Install MongoDB PHP Libraries 
 * [Instructions](https://www.mongodb.com/developer/languages/php/php-setup/)
 * ```sudo pecl install mongodb```
-* or ```composer install``` in pdoExamples directory
-* Add mongodb.ini to /usr/local/etc/php/conf.d
+  * or ```composer install``` in pdoExamples directory
+* Add mongodb.ini to /usr/local/etc/php/conf.d -- done via .devcontainer/.devcontainer.json ```postCreateCommand```
   *   ```extension=mongodb.so```
-* Install PHP libraries via composer in pdoExamples directory
+* Install PHP libraries via composer in pdoExamples directory -- user must do by hand
   *   ```composer require mongodb/mongodb```
 
 # Add Redis
 
 * Following these instructions:
-  *   [Redis](https://aaronblondeau.com/posts/november_2021/github-codespaces/)
+  *   ~~[Redis](https://aaronblondeau.com/posts/november_2021/github-codespaces/)~~
   *   Using this [extension](https://database-client.com/#/document).
-* Install [Docker-in-Docker](https://aaronblondeau.com/posts/november_2021/github-codespaces/)) if you  have not already
-* Install Redis in Docker:
-  *  ```docker pull redis```
-* Start Redis
-  *  ```docker run --name local-redis -p 6379:6379 -d redis```
+* ~~Install [Docker-in-Docker](https://aaronblondeau.com/posts/november_2021/github-codespaces/)) if you  have not already~~
+* ~~Install Redis in Docker:~~
+  *  ~~```docker pull redis```~~
+* ~~Start Redis~~
+  *  ~~```docker run --name local-redis -p 6379:6379 -d redis```~~
 
 # Install Redis PHP Libraries
 * [Instructions](https://developer.redis.com/develop/php/)
-*   ```sudo pecl install redis```
+*   ```sudo pecl install redis``` -- done via .devcontainer/.devcontainer.json ```postCreateCommand```
 * Add redis.ini to /usr/local/etc/php/conf.d
-  *   ```extension=redis.so```
+  *   ```extension=redis.so``` -- done via .devcontainer/.devcontainer.json ```postCreateCommand```
 * [Examples](https://github.com/redis-developer/redis-php-getting-started/)
 
 # PHP
