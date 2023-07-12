@@ -30,7 +30,7 @@ services:
       MYSQL_PASSWORD: mariadb
   
   mongodb: # mongodb container
-    image: mongodb/mongodb-community-server:latest
+    image: mongodb/mongodb-community-server:latest  # image_name:tag from docker hub
     restart: unless-stopped
     volumes:
       - mongodb-data:/data/db # persistent data
