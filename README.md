@@ -83,14 +83,17 @@ MongoDB and Redis now each run in their own container configured in .devcontaine
 * [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
 * You can run this repository on Windows if you install Docker
   *   Install the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension in VS Code locally
+
+# Git (when runing on Windows in a Dev Container) 
 * ~~Before you checkout the repository set the line endings in Windows~~
   *   ~~```git config --local core.autocrlf false```~~
   *   [Documentation](https://www.aleksandrhovhannisyan.com/blog/crlf-vs-lf-normalizing-line-endings-in-git/) on Line Endings
   *   [More documentation on Line Endings and WSL](https://code.visualstudio.com/docs/remote/troubleshooting#_resolving-git-line-ending-issues-in-wsl-resulting-in-many-modified-files)
   *   fixed with ```.gitattributes```
   *   ```* text=auto eol=lf```
-* Might need to add new ssh keys in the container
+* Need to add new SSH Keys inside the container
 *   If ssh-agent is running in Windows, that might interfere with ssh keys in the container
+*   If you rebuild the container these SSH Keys are destoryed
 * Will need to mark the directory as safe from inside the container:
-  *   ```git config --global --add safe.directory /workspaces/Mariadb_MongoDB_Redis_WebApp_Example```
+  *   ```git config --global --add safe.directory /workspaces/mariadb-mongo-redis-php ```
   *   --local instead of --global?
