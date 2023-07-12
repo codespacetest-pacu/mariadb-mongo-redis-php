@@ -25,7 +25,10 @@ sudo rm -f /home/vscode/.dbclient && sudo ln -s \"$(pwd)/.dbclient\"  /home/vsco
 
 MongoDB and Redis now each run in their own container configured in .devcontainer/docker-compose.yml. Each database starts automatically.
 
-
+## Containers & Documentation
+* [MongoDB](https://hub.docker.com/r/mongodb/mongodb-community-server)
+* [Redis](https://hub.docker.com/_/redis)
+* 
 # Add Mongo
 
 * Install [MongoDB Extension](https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode)
