@@ -1,14 +1,3 @@
-# Mariadb_MongoDB_Redis_WebApp_Example 
-
-## Goal
-
-Demonstrates the combined use of a RDBMS (Mariadb), a document database (MongoDB), a key-value pair database (Redis), and a RESTfulAPI.
-
-## Description
-
-This web app is a book seller website.  Inventory and Purchases (transactions) are stored in the RDBMS.  Book reviews and comments are stored in the document database.  User settings and shopping cart information is stored in the key-value pair database.  Detailed information about individual books is accessed via the RESTfulAPI ([openlibrary.org](https://openlibrary.org/dev/docs/api/books)).
-
-
 # php-mysql-test
 
 [Original Instructions](https://github.com/microsoft/vscode-dev-containers/tree/main/containers/php-mariadb)
