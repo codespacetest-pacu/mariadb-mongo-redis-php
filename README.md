@@ -80,8 +80,8 @@ MongoDB and Redis now each run in their own container configured in .devcontaine
   *   Install the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension in VS Code locally
 * ~~Before you checkout the repository set the line endings in Windows~~
   *   ~~```git config --local core.autocrlf false```~~
-  *   [Documentation](https://www.aleksandrhovhannisyan.com/blog/crlf-vs-lf-normalizing-line-endings-in-git/) on Line 
-Endings
+  *   [Documentation](https://www.aleksandrhovhannisyan.com/blog/crlf-vs-lf-normalizing-line-endings-in-git/) on Line Endings
+  *   [More documentation on Line Endings and WSL](https://code.visualstudio.com/docs/remote/troubleshooting#_resolving-git-line-ending-issues-in-wsl-resulting-in-many-modified-files)
   *   fixed with ```.gitattributes```
   *   ```* text=auto eol=lf```
 * Might need to add new ssh keys in the container
