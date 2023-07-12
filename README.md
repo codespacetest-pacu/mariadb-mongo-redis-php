@@ -76,6 +76,7 @@ MongoDB and Redis now each run in their own container configured in .devcontaine
 * Choose ```Listen for Xdebug```
 
 # Windows in a Dev Container
+* [Shutdown VS Code](https://code.visualstudio.com/docs/devcontainers/containers#_managing-containers) to shutdown the dev container. 
 * [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
 * You can run this repository on Windows if you install Docker
   *   Install the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension in VS Code locally
