@@ -28,7 +28,7 @@ MongoDB and Redis now each run in their own container configured in .devcontaine
 ## Containers & Documentation
 * [MongoDB](https://hub.docker.com/r/mongodb/mongodb-community-server)
 * [Redis](https://hub.docker.com/_/redis)
-* [In Depth Tutorial, very helpful](https://github.com/0916dhkim/vscode-devcontainer-tutorial)
+* [In-Depth Tutorial, very helpful](https://github.com/0916dhkim/vscode-devcontainer-tutorial)
   
 # Add Mongo
 
