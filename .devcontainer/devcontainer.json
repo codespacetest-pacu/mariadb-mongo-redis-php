@@ -24,7 +24,8 @@
 			"extensions": [
 				"mongodb.mongodb-vscode",
 				"cweijan.vscode-redis-client",
-				"ms-azuretools.vscode-docker"
+				"ms-azuretools.vscode-docker",
+				"mathematic.vscode-pdf"
 			]
 		}
 	}
